@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body,html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background-color:#fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/*Header page*/
+
+header{
+	width: 100%;
+}
+
+.main{
+	background-image: url(https://img3.goodfon.ru/original/1920x1080/d/61/devushka-afroamerikanka-chernaya.jpg);
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-color: 	#696969;
+	background-size: cover;
+	text-align: center;
+	color:#fff;
+	font-size: 3em;
+	height:900px;
+	width: 100%;
+	position: absolute;
+	background-position: 75%;
+    background-position-x: 75%;
+    background-position-y: center;
+}
+
+#logo{
+	z-index: 1000;
+	position: absolute;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+#logo img{
+	height: 100px;
+}
+
+/*@media (min-width: 701px) {
+	#logo{
+		float: left;
+		width: 30%;
+		font-size: 1.1em;
+	}
+}
+
+@media (max-width: 700px) {
+	#logo{
+		margin-top: 15px;
+		width: 100%;
+		font-size: 1em;
+	}
+}*/
+
+nav{
+	text-align: center;
+	font-size: 0.5em;
+	line-height: 40px;
+	padding-top: 20px;
+	width: 100%;
+}
+ a:hover{
+	color:#b0b0b0;
+	text-decoration: none;
+}
+a{color:#b0b0b0;
+	text-decoration: none;
+}
+ a:visited{
+	color:#b0b0b0;
+	text-decoration: none;
+}
+
+
+ a:not(:last-child){
+	margin-right: 8%;
+}
+
+form{
+	display: inline-block;
+}
+
+button {
+  cursor: pointer;
+  z-index: 5000;
+  min-width: 150px;
+  padding: 15px 5px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background: #3da35a;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(56,100,38);
+  transition: all 1s;
+}
+
+button:hover {
+  box-shadow: 0 0 25px rgb(56,100,38);
+}
+
+button:focus {
+  outline: none;
+}
+
+.tryItNow{
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 5%;
+	width: 40%;
+	float: left;
+	color:#ffffff;
+	font-size: 1.5em;
+}
+
+.tryItNow h2{
+	margin-left: 17%;
+}
+
+.tryItNow button{
+	min-width: 200px;
+	margin-left: 80%;
+	margin-top: 20px;
+}
+
+/*Main*/
+
+.conteiner{
+	background-blend-mode: multiply;
+	background-color:#3da35a;
+	text-align: center;
+	color:#fff;
+	font-size: 2em;
+	width: 100%;
+	height: 200px;
+	margin-top: 700px;
+	position: absolute;
+	opacity: 0.5;
+	padding-top: 40px;
+	transition: all 1s ease-out;
+
+}
+
+main{
+	background-color: #fff;
+	color:	#000000;
+	font-size: 1em;
+	width: 100%;
+	height: auto;
+	margin-top: 900px;
+	position: absolute;
+}
+
+.block_row{
+	display: inline-flex;
+	justify-content: space-around;
+	margin-top: 100px;
+	height: auto;
+}
+
+.block_column{
+		flex-wrap: wrap;
+		width: 25%;
+}
+
+.block_item{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.block_item img{
+ width: 50px;
+ height: 50px;
+}
+
+ span{
+	display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.landing-bg-gray{
+	background-color:#D3D3D3;
+	color:	#000000;
+	font-size: 1em;
+	width: 100%;
+	height: auto;
+	margin-top: 100px;
+	padding-top: 100px;
+	padding-bottom: 150px;
+	text-align: center;
+}
+
+.landing-bg-gray button{
+
+	min-width: 250px;
+	margin-top: 100px;
+}
+
+.justify-center{
+    display: inline-flex;
+    justify-content: space-around;
+	width: 60%;
+}
+
+.landing-bg-gray img{
+	border-radius: 50%;
+	border-style: solid;
+    border-width: 1px;
+    background-color: white;
+}
+
+.list{
+	position: absolute;
+	background-color:#fff;
+	font-size: 1em;
+	height: 500px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-left: 25%;
+	text-align: center;
+
+    justify-content: space-between;
+	width: 50%;
+	display: block;
+	position: sticky;
+}
+
+@media (max-width: 950px){
+	.list{
+		height: 300px;
+	}
+	
+}
+
+.list  button{
+	min-width: 200px;
+	margin-top: 20px;
+
+}
+
+footer{
+	width: 100%;
+	height:500px;
+	margin-top: 2700px;
+	padding-top: 100px;
+	background-color: #3da35a;
+	color:#fff;
+	text-align: center;
+	display: inline-flex;
+   	justify-content: space-around ;
+}

@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body,html{
+	width: 100%;
+	height: 100%;
+} 
+
+body{
+	background-color:#3da35a;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header{
+	background-image: url(https://img3.goodfon.ru/original/1920x1080/d/61/devushka-afroamerikanka-chernaya.jpg);
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-color: 	#696969;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+		background-position: 75%;
+    background-position-x: 75%;
+    background-position-y: center;
+}
+
+#logo{
+	cursor: pointer;
+	display: inline-block;
+	
+}
+
+#logo img{
+	height: 100px;
+	width: auto;
+	margin-top: 20px;
+	margin-left: 50px;
+}
+
+
+.head{
+	float: right;
+	margin:20px 50px 0  0 ;
+}
+
+form{
+	display: inline-block;
+}
+
+button {
+  cursor: pointer;
+  z-index: 5000;
+  min-width: 150px;
+  padding: 15px 5px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  background: #3da35a;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(56,100,38);
+  transition: all 1s;
+  display: inline-block;
+
+}
+
+button:hover {
+  box-shadow: 0 0 25px rgb(56,100,38);
+}
+
+button:focus {
+  outline: none;
+}
+
+footer{
+	width: 100%;
+	height:auto;
+	padding-top: 100px;
+	background-color: #3da35a;
+	color:#fff;
+	text-align: center;
+
+   	justify-content: space-between;
+}
+
+.block_row{
+	display: inline-flex;
+	justify-content: space-around;
+	height: auto;
+}
+
+.block_column{
+		flex-wrap: wrap;
+		width: 25%;
+}
+
+.block_item{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+/* Style the container with a rounded border, grey background and some padding and margin */
+.container {
+    border: 2px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0;
+
+}
+
+/* Clear floats after containers */
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+	width: 100px;
+	height: 100px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+     object-fit: cover;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .container {
+    text-align: center;
+  }
+
+  .container img {
+    margin: auto;
+    float: none;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
